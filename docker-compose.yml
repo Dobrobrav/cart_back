@@ -7,10 +7,10 @@ services:
       - DJANGO_SUPERUSER_PASSWORD=123
 #      - REDIS_HOST=redis
 #      - REDIS_PORT=6379
-    command: bash -c "python /usr/src/django/manage.py makemigrations && python /usr/src/django/manage.py migrate --noinput && python /usr/src/django/manage.py runserver 0.0.0.0:8000 && pip install -r /usr/src/django/requirements.txt"
+#    command: bash -c "python /usr/src/django/manage.py makemigrations && python /usr/src/django/manage.py migrate --noinput && python /usr/src/django/manage.py runserver 0.0.0.0:8000 && pip install -r /usr/src/django/requirements.txt"
 #    restart: always
-    volumes:
-      - ./:/usr/src/django
+#    volumes:
+#      - ./:/usr/src/django
     ports:
       - "8000:8000"
 #    depends_on:
